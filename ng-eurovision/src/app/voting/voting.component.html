@@ -1,0 +1,200 @@
+
+<h3>{{currentCountry}} votes:</h3>
+
+<div class="col-md-6 list-group">
+  <form (ngSubmit)="onSubmit(votingForm.value)" #votingForm="ngForm">
+
+    <div class="form-group row">
+      <label for="id1" class="col-md-3 col-form-label">1 point</label>
+        <div class="col-md-9">
+          <select (focusout)="onChange($event.target.value, votingForm.value)" 
+                    required
+                    id="id1"
+                    class="custom-select"
+                    [ngClass]="{'is-invalid': voteSelect1.touched && !voteSelect1.valid}"
+                    ngModel
+                    name="voteSelect1"
+                    #voteSelect1="ngModel">
+                    <option *ngFor="let country of countries" [value]='country.name+",1"'>{{country.name}}</option>
+          </select>       
+          <div class="invalid-feedback">
+            Please select a country.
+          </div>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="id2" class="col-md-3 col-form-label">2 points</label>
+        <div class="col-md-9">
+          <select (focusout)="onChange($event.target.value, votingForm.value)" 
+                    required
+                    id="id2"
+                    class="custom-select"
+                    [ngClass]="{'is-invalid': voteSelect2.touched && !voteSelect2.valid}"
+                    ngModel
+                    name="voteSelect2"
+                    #voteSelect2="ngModel">
+            <option *ngFor="let country of countries" [value]='country.name+",2"'>{{country.name}}</option>
+          </select>       
+          <div class="invalid-feedback">
+            Please select a country.
+          </div>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="id3" class="col-md-3 col-form-label">3 points</label>
+        <div class="col-md-9">
+          <select (focusout)="onChange($event.target.value, votingForm.value)"
+                    required
+                    id="id3"
+                    class="custom-select"
+                    [ngClass]="{'is-invalid': voteSelect3.touched && !voteSelect3.valid}"
+                    ngModel
+                    name="voteSelect3"
+                    #voteSelect3="ngModel">
+            <option *ngFor="let country of countries" [value]='country.name+",3"'>{{country.name}}</option>
+          </select>       
+          <div class="invalid-feedback">
+            Please select a country.
+          </div>
+      </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="id4" class="col-md-3 col-form-label">4 points</label>
+          <div class="col-md-9">
+            <select (focusout)="onChange($event.target.value, votingForm.value)"
+                      required
+                      id="id4"
+                      class="custom-select"
+                      [ngClass]="{'is-invalid': voteSelect4.touched && !voteSelect4.valid}"
+                      ngModel
+                      name="voteSelect4"
+                      #voteSelect4="ngModel">
+              <option *ngFor="let country of countries" [value]='country.name+",4"'>{{country.name}}</option>
+            </select>       
+            <div class="invalid-feedback">
+              Please select a country.
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="id5" class="col-md-3 col-form-label">5 points</label>
+        <div class="col-md-9">
+          <select (focusout)="onChange($event.target.value, votingForm.value)" 
+                    required
+                    id="id5"
+                    class="custom-select"
+                    [ngClass]="{'is-invalid': voteSelect5.touched && !voteSelect5.valid}"
+                    ngModel
+                    name="voteSelect5"
+                    #voteSelect5="ngModel">
+            <option *ngFor="let country of countries" [value]='country.name+",5"'>{{country.name}}</option>
+          </select>       
+          <div class="invalid-feedback">
+            Please select a country.
+          </div>
+      </div>
+    </div>        
+
+    <div class="form-group row">
+      <label for="id6" class="col-md-3 col-form-label">6 points</label>
+        <div class="col-md-9">
+          <select (focusout)="onChange($event.target.value, votingForm.value)" 
+                    required
+                    id="id6"
+                    class="custom-select"
+                    [ngClass]="{'is-invalid': voteSelect6.touched && !voteSelect6.valid}"
+                    ngModel
+                    name="voteSelect6"
+                    #voteSelect6="ngModel">
+            <option *ngFor="let country of countries" [value]='country.name+",6"'>{{country.name}}</option>
+          </select>       
+          <div class="invalid-feedback">
+            Please select a country.
+          </div>
+      </div>
+    </div>          
+
+    <div class="form-group row">
+      <label for="id7" class="col-md-3 col-form-label">7 points</label>
+        <div class="col-md-9">
+          <select (focusout)="onChange($event.target.value, votingForm.value)" 
+                    required
+                    id="id7"
+                    class="custom-select"
+                    [ngClass]="{'is-invalid': voteSelect7.touched && !voteSelect7.valid}"
+                    ngModel
+                    name="voteSelect7"
+                    #voteSelect7="ngModel">
+            <option *ngFor="let country of countries" [value]='country.name+",7"'>{{country.name}}</option>
+          </select>       
+          <div class="invalid-feedback">
+            Please select a country.
+          </div>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="id8" class="col-md-3 col-form-label">8 points</label>
+        <div class="col-md-9">
+          <select (focusout)="onChange($event.target.value, votingForm.value)" 
+                    required
+                    id="id8"
+                    class="custom-select"
+                    [ngClass]="{'is-invalid': voteSelect8.touched && !voteSelect8.valid}"
+                    ngModel
+                    name="voteSelect8"
+                    #voteSelect8="ngModel">
+            <option *ngFor="let country of countries" [value]='country.name+",8"'>{{country.name}}</option>
+          </select>       
+          <div class="invalid-feedback">
+            Please select a country.
+          </div>
+      </div>
+    </div>
+
+  <div class="form-group row">
+    <label for="id10" class="col-md-3 col-form-label">10 points</label>
+      <div class="col-md-9">
+        <select (focusout)="onChange($event.target.value, votingForm.value)" 
+                  required
+                  id="id8"
+                  class="custom-select"
+                  [ngClass]="{'is-invalid': voteSelect10.touched && !voteSelect10.valid}"
+                  ngModel
+                  name="voteSelect10"
+                  #voteSelect10="ngModel">
+          <option *ngFor="let country of countries" [value]='country.name+",10"'>{{country.name}}</option>
+        </select>       
+        <div class="invalid-feedback">
+          Please select a country.
+        </div>
+    </div>
+  </div>
+
+    <div class="form-group row">
+      <label for="id12" class="col-md-3 col-form-label">12 points</label>
+        <div class="col-md-9">
+          <select (focusout)="onChange($event.target.value, votingForm.value)" 
+                    required
+                    id="id12"
+                    class="custom-select"
+                    [ngClass]="{'is-invalid': voteSelect12.touched && !voteSelect12.valid}"
+                    ngModel
+                    name="voteSelect12"
+                    #voteSelect12="ngModel">
+            <option *ngFor="let country of countries" [value]='country.name+",12"'>{{country.name}}</option>
+          </select>       
+          <div class="invalid-feedback">
+            Please select a country.
+          </div>
+      </div>
+    </div>
+  
+    <button class="btn btn-primary float-right" type="submit" [disabled]="!votingForm.form.valid">Submit votes</button>
+  </form>
+</div>
+

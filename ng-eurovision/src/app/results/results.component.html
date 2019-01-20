@@ -1,0 +1,33 @@
+ 
+  <h3>Results:</h3>
+  <h5 *ngIf="!hasResults">There are no votes yet.</h5>
+  <div class="row" *ngIf="hasResults"> <!--!score[0].points-->
+    <div class="col-md-3 col-sm-12">
+    <ul class="list-group">
+      <li *ngFor="let s of score"
+          class="list-group-item d-flex justify-content-between align-items-center">
+        {{s.name}}
+        <span class="badge badge-primary badge-pill">{{s.points}}</span>
+      </li>
+    </ul>
+    </div>
+
+    <div class="col-md-9 col-sm-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col" *ngFor="let country of countries"><span [ngClass]="['flag-icon', country.flag, 'my-flag-span']"></span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let country of countries; index as i;">
+            <th scope="row"><span [ngClass]="['flag-icon', country.flag, 'my-flag-span']"></span></th>
+            <td *ngFor="let country of countries; index as j;">{{ matrix[i][j] }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+

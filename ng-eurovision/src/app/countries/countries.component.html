@@ -1,0 +1,11 @@
+<h3>All countries:</h3>
+
+<div class="col-md-4 col-sm-12 list-group">
+  <button *ngFor="let country of countries"
+            type="button" [routerLink]="['/countries', country.name]"
+            class="list-group-item list-group-item-action"
+            [disabled]="country.hasVoted">    
+    <span [ngClass]="['flag-icon', country.flag, 'my-flag-span']"></span>
+    {{country.name}}
+   </button>
+</div>

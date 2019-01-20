@@ -1,0 +1,19 @@
+
+.custom-select {
+    width:70%;
+}
+
+.left-col {
+    margin-bottom: 50px;
+}
+
+.custom-select {
+	width: 100%;
+}
+
+.my-invalid-feedback {
+	width: 100%;
+	margin-top: 0.25rem;
+	font-size: 80%;
+	color: #dc3545;
+}

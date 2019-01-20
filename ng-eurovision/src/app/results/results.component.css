@@ -1,0 +1,10 @@
+.my-flag-span {
+	width: 40px;
+	height: 30px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.table th, .table td {
+	text-align: center;
+}

@@ -1,0 +1,16 @@
+.my-flag-span {
+	width: 40px;
+	height: 30px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+
+.list-group-item.disabled, .list-group-item:disabled {
+	color: #a6a7a8;
+	pointer-events: none;
+	cursor: not-allowed;
+	background-color: rgb(228, 228, 228);
+}
+
+
