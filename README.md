@@ -248,5 +248,5 @@ Sada bi angular aplikacija trebala biti dostupna na linku `http://localhost:4200
 
 ## Autor
 
-Nemanja Mitic, nemanja.mitic.elfak@hotmail.com 20. 1. 2019.
+Nemanja Mitic, 20. 1. 2019.
 
