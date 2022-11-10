@@ -120,7 +120,7 @@ Now the angular application should be available on link `http://localhost:4200`
 
 ## Author
 
-Nemanja Mitic, nemanja.mitic.elfak@hotmail.com 20. 1. 2019.
+Nemanja Mitic, 20. 1. 2019.
 
 ***
 ***
